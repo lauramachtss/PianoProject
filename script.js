@@ -4,7 +4,7 @@ const switcher = document.querySelector('.switcher');
 const keysSection = document.querySelector('.piano__keys');
 
 const playNote = (note) => {
-    const audio = new Audio(`../notes/${note}.wav`);
+    const audio = new Audio(`./notes/${note}.wav`);
     audio.play();
 }
 
@@ -17,7 +17,7 @@ handleMouseDown = (key) => {
         return;
     }
 
-    key.style.background = '#ddd';
+    key.style.background = '#c1cfc';
 }
 
 const handleMouseUp = (key) => {
@@ -66,11 +66,25 @@ const keyDownMapper = {
     "o": () => handleMouseDown(keys[16]),
     "p": () => handleMouseDown(keys[17]),
     "-": () => handleMouseDown(keys[18]),
-    "[": () => handleMouseDown(keys[19]),
+    "\\": () => handleMouseDown(keys[19]),
     "=": () => handleMouseDown(keys[20]),
-    "]": () => handleMouseDown(keys[21]),
+    "z": () => handleMouseDown(keys[21]),
     "Backspace": () => handleMouseDown(keys[22]),
-    "\\": () => handleMouseDown(keys[23]),
+    "x": () => handleMouseDown(keys[23]),
+    "c": () => handleMouseDown(keys[24]),
+    "3": () => handleMouseDown(keys[25]),
+    "v": () => handleMouseDown(keys[26]),
+    "7": () => handleMouseDown(keys[27]),
+    "b": () => handleMouseDown(keys[28]),
+    "n": () => handleMouseDown(keys[29]),
+    "j": () => handleMouseDown(keys[30]),
+    "m": () => handleMouseDown(keys[31]),
+    "k": () => handleMouseDown(keys[32]),
+    ",": () => handleMouseDown(keys[33]),
+    "l": () => handleMouseDown(keys[34]),
+    ".": () => handleMouseDown(keys[35]),
+    //cbsh = 25,27,30,32
+    
 }
 
 const keyUpMapper = {
@@ -93,11 +107,24 @@ const keyUpMapper = {
     "o": () => handleMouseUp(keys[16]),
     "p": () => handleMouseUp(keys[17]),
     "-": () => handleMouseUp(keys[18]),
-    "[": () => handleMouseUp(keys[19]),
+    "\\": () => handleMouseUp(keys[19]),
     "=": () => handleMouseUp(keys[20]),
-    "]": () => handleMouseUp(keys[21]),
+    "z": () => handleMouseUp(keys[21]),
     "Backspace": () => handleMouseUp(keys[22]),
-    "\\": () => handleMouseUp(keys[23]),
+    "x": () => handleMouseUp(keys[23]),
+    "c": () => handleMouseUp(keys[24]),
+    "3": () => handleMouseUp(keys[25]),
+    "v": () => handleMouseUp(keys[26]),
+    "7": () => handleMouseUp(keys[27]),
+    "b": () => handleMouseUp(keys[28]),
+    "n": () => handleMouseUp(keys[29]),
+    "j": () => handleMouseUp(keys[30]),
+    "m": () => handleMouseUp(keys[31]),
+    "k": () => handleMouseUp(keys[32]),
+    ",": () => handleMouseUp(keys[33]),
+    "l": () => handleMouseUp(keys[34]),
+    ".": () => handleMouseUp(keys[35]),
+    //cbsh = 25,27,30,32
 }
 
 document.addEventListener('keydown', (event) => {
