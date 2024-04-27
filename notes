@@ -1,2 +1,2 @@
-/*aqui são adicionadas as notas de cada tecla do piano*/
+/*here the notes of each piano key are added*/
 ./notes/${note}.wav;
