@@ -16,7 +16,7 @@ const handleMouseDown = (key) => {
         return;
     }
 
-    if (parseInt(key.getAttribute('data-note')) <= 18) {
+    if (parseInt(key.getAttribute('data-note')) <= 17) {
         key.classList.add('left-key');
     } else {
         key.classList.add('right-key');
@@ -56,6 +56,7 @@ document.addEventListener('keydown', (event) => {
 document.addEventListener('keyup', (event) => {
     handleMouseUp(document.querySelector(`[data-note="${event.key}"]`));
 });
+
 
 
                                 const keyDownMapper = {
@@ -138,6 +139,7 @@ document.addEventListener('keyup', (event) => {
                                     ".": () => handleMouseUp(keys[35]),
                                     //cbsh = 25,27,30,32
 }                                   
+
 
 document.addEventListener('keydown', (event) => {
     event.preventDefault();

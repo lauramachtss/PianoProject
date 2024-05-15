@@ -8,6 +8,7 @@
 }
 
 body {
+    background-image: url();/*aqui você coloca a URL ou o NomedaImagem.png/jpg para colocar como imagem de fundo*/
     background-color: #1f212a;
     background-position: center;
     background-repeat:no-repeat;
@@ -29,7 +30,7 @@ body {
 }
 
 .controls {
-    color: rgb(148, 133, 241);
+    color: rgb(181, 171, 247);
     padding: 30px;
     display: flex;
     width: 100%;
@@ -89,7 +90,7 @@ body {
 .key span {
     font-weight: 600;
     position: absolute;
-    transition-duration: 500ms;
+    transition-duration: 2s;
 }
 
 .key {
@@ -145,11 +146,10 @@ body {
 }
 
 .left-key {
-    background-color: #dddddd; 
+    background-color: #dddd; 
 }
-
 .right-key {
-    background-color: #dddddd;
+    background-color: #dddd; 
 }
 
 
